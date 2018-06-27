@@ -65,6 +65,3 @@ yarn-error.log
 # editors
 .idea/
 .vscode
-
-#node
-.node_modules/
