@@ -26,7 +26,7 @@ module.exports = {
   // social
   authorSocialLinks: [
     { name: "github", url: "https://github.com/zigagrcar" },
-    { name: "twitter", url: "https://twitter.com/igrch" },
+    { name: "twitter", url: "https://twitter.com/zigagrcar" },
     { name: "facebook", url: "https://facebook.com/zigagrcar" },
     { name: "linkedin", url: "https://www.linkedin.com/in/zigagrcar" }
   ]
