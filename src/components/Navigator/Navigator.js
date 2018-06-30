@@ -57,6 +57,9 @@ const styles = theme => ({
           right: theme.base.sizes.linesMargin,
           height: 0,
           borderTop: `1px solid ${theme.base.colors.lines}`
+        },
+        "& .welcome": {
+          display: "none"
         }
       },
       "&.moving-aside": {
