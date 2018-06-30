@@ -8,8 +8,6 @@ import { setNavigatorPosition, setNavigatorShape, setCategoryFilter } from "../.
 import { moveNavigatorAside } from "./../../utils/shared";
 import List from "./List";
 
-import WelcomeBox from "../WelcomeBox";
-
 const styles = theme => ({
   navigator: {
     transform: "translate3d(0, 0, 0)",
@@ -27,10 +25,7 @@ const styles = theme => ({
         left: "-100%"
       },
       "&.is-featured": {
-        left: 0,
-        "& .List-posts-0-1-3": {
-          top: "160px"
-        }
+        left: 0
       }
     },
     [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
@@ -38,12 +33,7 @@ const styles = theme => ({
         transition: "left .9s",
         width: `calc(100vw - ${theme.info.sizes.width}px - ${theme.bars.sizes.actionsBar}px)`,
         left: `${theme.info.sizes.width}px`,
-        top: 0,
-        "&.list-posts": {
-          display: "block"
-        },
-        "& .List-posts-0-1-3": {
-          top: "160px"}
+        top: 0
       },
       "&.is-aside": {
         transition: "none, bottom 0.5s",
@@ -67,12 +57,6 @@ const styles = theme => ({
           right: theme.base.sizes.linesMargin,
           height: 0,
           borderTop: `1px solid ${theme.base.colors.lines}`
-        },
-        "& .welcomebox": {
-          display: "none"
-        },
-        "& .posts": {
-          top: 0
         }
       },
       "&.moving-aside": {
@@ -136,7 +120,6 @@ class Navigator extends React.Component {
           navigatorShape ? navigatorShape : ""
         } `}
       >
-      <WelcomeBox />
         {this.props.posts.length && (
           <List
             posts={posts}

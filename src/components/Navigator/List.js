@@ -7,16 +7,15 @@ import ListHeader from "./ListHeader";
 import SpringScrollbars from "../SpringScrollbars";
 import ListItem from "./ListItem";
 
+import WelcomeBox from "../WelcomeBox";
+
 const styles = theme => ({
   posts: {
     position: "absolute",
     left: 0,
     top: 0,
     bottom: 0,
-    width: "100%",
-    "& .is-featured": {
-      top: "200px"
-    }
+    width: "100%"
   },
   inner: {
     padding: `calc(${theme.bars.sizes.infoBar}px + 1.3rem) 1.3rem calc(${
@@ -31,7 +30,10 @@ const styles = theme => ({
       padding: `2rem  calc(1rem + 17px) calc(2rem + 17px) 2rem`,
       left: `${theme.info.sizes.width}px`,
       ".moving-featured &, .is-aside &": {
-        padding: "1rem .5rem 1rem .5rem"
+        padding: "1rem .5rem 1rem .5rem",
+        "& $.welcomebox": {
+          display: "none"
+        }
       }
     }
   },
@@ -67,6 +69,7 @@ class List extends React.Component {
       <div className={classes.posts}>
         <SpringScrollbars forceCheckOnScroll={true} isNavigator={true}>
           <div className={classes.inner}>
+            <WelcomeBox />
             <ListHeader
               expandOnClick={expandOnClick}
               categoryFilter={categoryFilter}
