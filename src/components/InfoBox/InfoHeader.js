@@ -62,7 +62,7 @@ const styles = theme => ({
     },
     "@media (hover: hover)": {
       "&:hover": {
-        borderRadius: "75% 65%"
+        transform: "scale(1.1)"
       }
     },
       ".is-aside.open &": {

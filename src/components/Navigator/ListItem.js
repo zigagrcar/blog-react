@@ -29,7 +29,7 @@ const styles = theme => ({
       "&:hover": {
         color: theme.navigator.colors.postsListItemLinkHover,
         "& .pointer": {
-          borderRadius: "65% 75%"
+          transform: "scale(1.1)"
         }
       }
     }
