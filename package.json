@@ -30,7 +30,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.14.2",
     "prettier": "^1.18.2",
-    "sharp-cli": "^1.10.0",
+    "sharp-cli": "^4.1.0",
     "webpack-bundle-analyzer": "^3.3.2"
   },
   "dependencies": {
@@ -45,7 +45,7 @@
     "gatsby-plugin-feed": "^1.3.25",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-jss": "^1.5.14",
-    "gatsby-plugin-manifest": "^1.0.27",
+    "gatsby-plugin-manifest": "^5.5.0",
     "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-offline": "^6.5.0",
     "gatsby-plugin-react-helmet": "^2.0.11",
